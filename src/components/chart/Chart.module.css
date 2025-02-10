@@ -1,0 +1,61 @@
+.wrapper {
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-image: url(../../assets/images/grafic-bg.png);
+}
+
+.title {
+    font-size: 41px;
+    line-height: 40px;
+    color: #78a659;
+}
+  
+.chartContainer {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(180deg, #1c203b, #10142d);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+  
+.chart {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.dateList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.listItem {
+    list-style: none;
+    color: #546076;
+    font-size: 13px;
+}
+
+@media (max-height: 740px) {
+    .chart {
+        transform: translate(-50%, -65%);
+    }
+}
+
+@media (max-height: 670px) {
+    .chart {
+        transform: translate(-50%, -78%);
+    }
+}
+
+  

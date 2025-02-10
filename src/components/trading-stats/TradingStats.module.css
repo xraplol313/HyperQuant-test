@@ -1,0 +1,97 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	color: #ffffff; 
+}
+
+.title {
+	font-size: 17px;
+	font-weight: bold;
+	color: #546076; 
+}
+
+.totalPrice {
+    font-size: 33px;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.leftBlock {
+	color: #ffffff;
+}
+
+.rightBlock {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.infoItem {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.lastValue{
+    padding-left: 4px;
+}
+
+.label {
+    font-size: 15px;
+	font-weight: bold;
+	color: #546076;
+}
+
+.value {
+    font-size: 15px;
+	font-weight: bold;
+	color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.value::after {
+    content: ' ';
+    display: inline-block;
+    background: url(../../assets/images/balans-logo.png) center no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+}
+
+@media (max-width:400px) {
+    .totalPrice {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:376px) {
+    .label,
+    .value {
+        font-size: 12px;
+    }
+    .lastValue {
+        padding-left: 3px;
+    }
+}
+
+@media (max-width:320px) {
+    .title {
+        font-size: 14px;
+    }
+    .totalPrice {
+        font-size: 25px;
+    }
+    .label,
+    .value {
+        font-size: 11px;
+    }
+}
+
+
+  
